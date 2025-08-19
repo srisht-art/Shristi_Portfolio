@@ -1,62 +1,10 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import ProjectModal from './ProjectModal';
-import Gallery from './Gallery';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
-  // Gallery images for the projects
-  const projectImages = [
-    {
-      src: "/ChatGPT Image Aug 17, 2025, 09_01_54 AM.png",
-      alt: "Perfume Web Page Wireframe",
-      caption: "Perfume E-commerce Wireframe",
-      category: "Web Design"
-    },
-    {
-      src: "/Screenshot 2025-08-16 124219.png",
-      alt: "Perfume Web Page Final Design",
-      caption: "Luxury Perfume Website",
-      category: "E-commerce"
-    },
-    {
-      src: "/ChatGPT Image Aug 17, 2025, 09_02_42 AM.png",
-      alt: "Wallpaper App Wireframes",
-      caption: "Wallpaper App User Flow",
-      category: "Mobile App"
-    },
-    {
-      src: "/Screenshot 2025-08-16 123109.png",
-      alt: "Wallpaper App Final UI",
-      caption: "Wallpaper Download App",
-      category: "Mobile UI"
-    },
-    {
-      src: "/Screenshot 2025-08-16 121641.png",
-      alt: "Mobile App Wireframes",
-      caption: "Mobile App Wireframe Collection",
-      category: "Wireframes"
-    },
-    {
-      src: "/ChatGPT Image Aug 17, 2025, 09_04_28 AM.png",
-      alt: "Journal App Wireframes",
-      caption: "Journal App User Interface",
-      category: "Mobile App"
-    },
-    {
-      src: "/Screenshot 2025-08-16 124503.png",
-      alt: "UI Design Samples",
-      caption: "UI/UX Design Portfolio",
-      category: "UI Design"
-    },
-    {
-      src: "/ChatGPT Image Aug 17, 2025, 09_21_30 AM.png",
-      alt: "Complete App Flow",
-      caption: "Complete Mobile App Flow",
-      category: "App Design"
-    }
-  ];
   const projects = [
     {
       id: 1,
@@ -251,14 +199,6 @@ const Projects = () => {
         />
       )}
 
-      {/* Design Gallery */}
-      <div className="mt-20">
-        <Gallery 
-          images={projectImages}
-          title="Design Gallery"
-          className="animate-fade-in"
-        />
-      </div>
     </section>
   );
 };
